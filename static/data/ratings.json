@@ -1,0 +1,81 @@
+{
+  "control": {
+    "expires": 300
+  },
+  "status": 0,
+  "data": {
+    "CommentResponseModel": {
+      "total": 302350,
+      "cmts": [{
+        "approve": 0,
+        "avatarurl": "",
+        "oppose": 0,
+        "reply": 0,
+        "nick": "KMv73940345",
+        "nickName": "KMv73940345",
+        "userId": 191177194,
+        "vipInfo": "",
+        "score": 4.5,
+        "time": "2018-05-12 13:45",
+        "id": 1021315656,
+        "content": "不错！！！！！！！"
+      }, {
+        "approve": 0,
+        "avatarurl": "https://img.meituan.net/avatar/dc4cfdc47d6f03989684555ad878252a36644.jpg",
+        "oppose": 0,
+        "reply": 0,
+        "nick": "啊啊鱼鱼",
+        "nickName": "啊啊鱼鱼",
+        "userId": 173535934,
+        "vipInfo": "",
+        "score": 5.0,
+        "time": "2018-05-11 14:14",
+        "id": 19150980,
+        "content": "感觉曙光的效果还行吧但是人好像不是很多耶。我是第一次来这里看电影，平时都是去万达去看的。这次是朋友请客，然后去漳州过来的啦，烈日崩塌还蛮好看的，场景也很震撼，男主角父亲也好帅啊！哈哈"
+      }, {
+        "approve": 0,
+        "avatarurl": "https://img.meituan.net/avatar/a2aab39f458539c797381d29f7d67e936605.jpg",
+        "oppose": 0,
+        "reply": 0,
+        "nick": "ivan328",
+        "nickName": "ivan328",
+        "userId": 36731629,
+        "vipInfo": "",
+        "score": 5.0,
+        "time": "2018-05-02 14:18",
+        "id": 1020028405,
+        "content": "还可以吧，仅仅是看个画面"
+      }, {
+        "approve": 0,
+        "avatarurl": "https://img.meituan.net/avatar/e6569c16d46f00e7bb4d5996e39930948311.jpg",
+        "oppose": 0,
+        "reply": 0,
+        "nick": "不忘初心gggwww",
+        "nickName": "不忘初心gggwww",
+        "userId": 212899581,
+        "vipInfo": "",
+        "score": 0.5,
+        "time": "2018-05-01 21:24",
+        "id": 1019929870,
+        "content": "什么鬼，劳资又没看过任何电影，怎么总莫名其妙叫人写点评"
+      }, {
+        "approve": 0,
+        "avatarurl": "https://img.meituan.net/avatar/20a7dffb8a1a40ccb11fcadcbc89ead28485.jpg",
+        "oppose": 0,
+        "reply": 0,
+        "nick": "夏汐颜.",
+        "nickName": "夏汐颜.",
+        "userId": 68167125,
+        "vipInfo": "",
+        "score": 5.0,
+        "time": "2018-04-30 21:52",
+        "id": 1019697619,
+        "content": "必须10分，没话说！"
+      }]
+    },
+    "hasNext": true,
+    "movieid": 246363,
+    "offset": 0,
+    "limit": 5
+  }
+}
