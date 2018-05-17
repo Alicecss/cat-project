@@ -9,7 +9,7 @@
         <router-link to="/host">热点</router-link>
     </div>
     <Footer></Footer>
-    <router-view/>
+    <router-view :eeee="data"/>
   </div>
 </template>
 
@@ -24,12 +24,10 @@ export default {
     }
   },
   created () {
-    this.$axios.get('/api/data')
+    this.$axios.get('./static/data/data-movies.json')
       .then((res) => {
-        res = res.data
-        if (res.errno === 0) {
-          this.seller = res.data
-        }
+        this.data = res.data.data.movies
+        console.log(res.data.data)
       })
       .catch((error) => {
         alert(error)

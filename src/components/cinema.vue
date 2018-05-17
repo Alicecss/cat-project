@@ -1,6 +1,15 @@
 <template>
 <div class="cinema">
-  影院
+  <div class="cinema-list">
+    <ul class="cinema-line">
+      <li class="brand">
+        <div class="brand-title">品牌：</div>
+        <ul class="tags">
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </div>
 </template>
 

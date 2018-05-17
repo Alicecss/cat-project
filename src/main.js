@@ -8,6 +8,7 @@ import '../src/common/stylus/index.styl'
 import 'jquery'
 
 Vue.prototype.$axios = axios
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

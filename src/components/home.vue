@@ -227,7 +227,7 @@ export default {
     Footer
   },
   created () {
-    this.$axios.get('/static/data/data-movies.json')
+    this.$axios.get('./static/data/data-movies.json')
       .then((res) => {
         this.moviesList = res.data.data.movies
         console.log(this.moviesList)
