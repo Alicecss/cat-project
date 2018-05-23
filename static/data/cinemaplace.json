@@ -4,7 +4,8 @@
   },
   "status": 0,
   "data": {
-    "朝阳区": [{
+    "hasNext": false,
+    "movieTheatre": [{
       "sellPrice": 47.0,
       "lat": 39.999462,
       "lng": 116.39392,

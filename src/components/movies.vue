@@ -14,7 +14,7 @@
       <div class="typeContent">
         <div class="typeAll">全部</div>
         <div class="typeText" v-for='(item,index) in arrList' :key='index' >
-          {{item.cat}}
+          {{item}}
         </div>
       </div>
     </div>
@@ -62,7 +62,9 @@
   <div class="main">
     <dl class="main-list" clearfix>
       <dd>
-        <div class="movies-item" v-for="(item,index) in arrList" :key="index" v-if="item.sc && 4.5<=item.sc && item.sc<=9.9">
+        <div class="movies-item"
+             v-for="(item,index) in moviesList" :key="index"
+             v-if="item.sc && 4.5<=item.sc && item.sc<=9.9">
           <div class="movies-pic">
             <img :src="item.img" width="160" height="220" alt="图片找不到啦" >
           </div>
@@ -95,7 +97,7 @@ export default {
   props: ['eeee'],
   data () {
     return {
-      arrList: this.eeee,
+      moviesList: this.eeee,
       arrType: ['爱情', '喜剧', '动画', '恐怖', '惊悚', '科幻', '动作', '悬疑', '战争', '奇幻', '运动', '纪录片',
         '短片', '武侠', '历史', '谍战', '黑色电影', '文艺', '其他'],
       arrArea: ['大陆', '美国', '韩国', '日本', '中国香港', '中国台湾', '泰国', '印度',
@@ -103,8 +105,28 @@ export default {
       arrTime: ['2018以后', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2000-2010', '90年代', '80年代', '70年代', '更早']
     }
   },
-  component: {
-    arrList () {}
+  computed: {
+    arrList () {
+      let movies = this.moviesList
+      let moviesType = []
+      let moviesObj = {}
+      let moviesStr = []
+      let moviesNum = []
+      for (let i = 0; i < movies.length; i++) {
+        // movies[i].cat.split(',')把item.cat的数组里的每一个元素用逗号分开成单独的元素
+        moviesNum.push(movies[i].cat.split(','))
+        // 第一个参数是对象(this), 第二个参数是一个数组集合,apply([], moviesNum)将数组转换为参数
+        moviesStr = [].concat.apply([], moviesNum) // 多维数组合成一维数组，concat合并多个数组
+        for (let j = 0; j < moviesStr.length; j++) {
+          // 数组去重
+          if (!moviesObj[moviesStr[j]]) {
+            moviesType.push(moviesStr[j])
+            moviesObj[moviesStr[j]] = 666
+          }
+        }
+      }
+      return moviesType
+    }
   }
 }
 </script>
