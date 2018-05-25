@@ -80,7 +80,7 @@ export default {
     }
   },
   created () {
-    this.$axios.get('./static/data/data-movies.json')
+    this.$axios.get('./static/data/cinema.json')
       .then((res) => {
         this.placeList = res.data.data.movieTheatre
         console.log(this.placeList)
@@ -90,6 +90,15 @@ export default {
       })
   },
   computed: {
+    arrList () {
+      let movies = this.placeList
+      let arrcity = []
+      for (let i = 0; i < movies.length; i++) {
+        arrcity.push(movies[i].brd.split(','))
+        console.log(arrcity)
+      }
+      return arrcity
+    }
   }
 }
 </script>
