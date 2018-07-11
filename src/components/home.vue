@@ -121,7 +121,7 @@
           </div>
         </div>
         <!--右边的电影菜单栏-->
-        <div class="aside">
+        <div class="aside clearfix hidden-xs hidden-sm">
           <!--今日票房-->
           <div class="list-wrapper">
             <div class="list-title">
@@ -264,13 +264,13 @@ export default {
         &.right
           right 50px
     .container
-      width 100%
       display flex
+      width 100%
       padding-top 60px
       .main
-        flex 2
-        width 200px
-        height 300px
+        flex 1
+        /*width 200px*/
+        /*height 300px*/
         .header
           width 900px
           height 30px
@@ -393,7 +393,6 @@ export default {
                     left -60px
                     font-size 16px
       .aside
-        flex 1
         width 200px
         height 300px
         .list-wrapper
